@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Add a Trail";
+}
+@model lost.Models.Hike
+<h1>Add a New Trail</h1>
+<form asp-controller="Home" asp-action="addHike" method="post">
+    <label asp-for="name"></label>
+    <input asp-for="name"><br>
+    <label asp-for="description"></label>
+    <input asp-for="description"><br>
+    <label asp-for="length"></label>
+    <input asp-for="length"><br>
+    <label asp-for="elevation"></label>
+    <input asp-for="elevation"><br>
+    <label asp-for="longitude"></label>
+    <input asp-for="longitude"><br>
+    <label asp-for="latitude"></label>
+    <input asp-for="latitude"><br>
+    <button type="submit">Add Trail</button>
+</form>
+<div asp-validation-summary="All"></div>

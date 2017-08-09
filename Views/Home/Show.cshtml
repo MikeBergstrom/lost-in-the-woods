@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<a href="/">Go Home</a>
+<h1>@ViewBag.hike.name</h1>
+<h2>Description</h2>
+<p>@ViewBag.hike.description</p>
+<h2>Trail Length</h2>
+<h3>@ViewBag.hike.length Miles</h3>
+<h2>Elevation Change</h2>
+<h3>@ViewBag.hike.elevation Feet</h3>
+<p>Longitude @ViewBag.hike.longitude</p>
+<p>Latitude @ViewBag.hike.latitude</p>
